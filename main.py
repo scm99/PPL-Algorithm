@@ -3,68 +3,71 @@ from csp import backtracking_search
 
 # People
 people = [
-          'Alvaro',
-          'Anne-Lise',
-          'Sara',
-          'Corentin',
-          'John Holden',]
+          'Daenarys Targaryen',
+          'John Snow',
+          'Arya Stark',
+          'Ned Stark',
+          'Cercei Lannister',
+          'Little Finger',
+          'Tyrion Lannister',
+          'Lord Varys',
+          'Joffrey Baratheon',
+          'Samwell Tarly'
+]          
 
-navs = ['Sara']
+navs = ['Daenarys Targaryen']
 
 # Availabilities of all the People
 availabilities = {
     ## Monday
     # 9h-10h30
-    0: {'Sara'},
+    0: {'Daenarys Targaryen'},
     # 10h30-12h
-    1: {'Sara', 'John Holden'},
+    1: {'Daenarys Targaryen', 'John Snow'},
     # 14h-15h30
-    2: {'Alvaro', 'Anne-Lise', 'John Holden', 'Sara'},
+    2: {'Arya Stark', 'Ned Stark', 'John Snow', 'Daenarys Targaryen'},
     # 15h30-17h
-    3: {'Alvaro', 'Anne-Lise', 'Corentin', 'John Holden', 'Sara'},
+    3: {'Arya Stark', 'Ned Stark', 'Cercei Lannister', 'John Snow', 'Daenarys Targaryen'},
 
     ## Tuesday
     # 9h-10h30
-    4: {'Anne-Lise'},
+    4: {'Ned Stark'},
     # 10h30-12h
-    5: {'Anne-Lise', 'John Holden'},
+    5: {'Ned Stark', 'John Snow'},
     # 14h-15h30
-    6: {'Alvaro', 'Anne-Lise', 'John Holden', 'Sara'},
+    6: {'Arya Stark', 'Ned Stark', 'John Snow', 'Daenarys Targaryen'},
     # 15h30-17h
-    7: {'Alvaro', 'Anne-Lise', 'Corentin', 'John Holden', 'Sara'},
-
-    #{'Alex', 'Alvaro', 'Anne-Lise', 'Corentin', 'François Wagner', 'Hadrien', 'Ines', 'John Holden', 'Margaux', 'Mathurin', 'Nourhen', 'Pauline', 'Sara', 'Thomas Raby', 'Yannis'},
-
+    7: {'Arya Stark', 'Ned Stark', 'Cercei Lannister', 'John Snow', 'Daenarys Targaryen'},
 
     ## Wednesday
     # 9h-10h30
-    8: {'Anne-Lise', 'Sara',},
+    8: {'Ned Stark', 'Daenarys Targaryen',},
     # 10h30-12h
-    9: {'Anne-Lise', 'Sara', 'John Holden'},
+    9: {'Ned Stark', 'Daenarys Targaryen', 'John Snow'},
     # 14h-15h30
-    10: {'Alvaro', 'Anne-Lise', 'John Holden', 'Sara'},
+    10: {'Arya Stark', 'Ned Stark', 'John Snow', 'Daenarys Targaryen'},
     # 15h30-17h
-    11: {'Alvaro', 'Anne-Lise', 'Corentin', 'John Holden', 'Sara'},
+    11: {'Arya Stark', 'Ned Stark', 'Cercei Lannister', 'John Snow', 'Daenarys Targaryen'},
 
     ## Thursday
     # 9h-10h30
-    12: {'Anne-Lise', 'Sara'},
+    12: {'Ned Stark', 'Daenarys Targaryen'},
     # 10h30-12h
-    13: {'Anne-Lise', 'Sara'},
+    13: {'Ned Stark', 'Daenarys Targaryen'},
     # 14h-15h30
-    14: {'Alvaro', 'Anne-Lise', 'Sara'},
+    14: {'Arya Stark', 'Ned Stark', 'Daenarys Targaryen'},
     # 15h30-17h
-    15: {'Alvaro', 'Anne-Lise', 'Corentin', 'Sara'},
+    15: {'Arya Stark', 'Ned Stark', 'Cercei Lannister', 'Daenarys Targaryen'},
 
     ## Friday
     # 9h-10h30
-    16: {'Nourhen', 'Sara', 'Sofiane', 'Thomas Raby', 'Yannis'},
+    16: {'Lord Varys', 'Daenarys Targaryen', 'Tyrion Lannister', 'Joffrey Baratheon', 'Little Finger'},
     # 10h30-12h
-    17: {'Nourhen', 'Sara', 'Sofiane', 'Thomas Raby', 'Yannis'},
+    17: {'Lord Varys', 'Daenarys Targaryen', 'Tyrion Lannister', 'Joffrey Baratheon', 'Little Finger'},
     # 14h-15h30
-    18: {'Ines', 'Sara', 'Sofiane', 'Thomas Raby', 'Yannis'},
+    18: {'Samwell Tarly', 'Daenarys Targaryen', 'Tyrion Lannister', 'Joffrey Baratheon', 'Little Finger'},
     # 15h30-17h
-    19: {'Ines', 'Sara', 'Sofiane', 'Thomas Raby', 'Yannis'},
+    19: {'Samwell Tarly', 'Daenarys Targaryen', 'Tyrion Lannister', 'Joffrey Baratheon', 'Little Finger'},
     
 }
 
