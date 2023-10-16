@@ -2,7 +2,7 @@
 
 Hello, this is an algorithm made to solve the problem of allocation of slots to the young pilot's student doing the PPL License in Supaero.
 
-![alt text](https://www.svgrepo.com/show/398327/small-airplane.svg)
+![alt text](https://www.svgrepo.com/show/398327/small-airplane.svg =250x)
 
 It uses the CSP algorithms in [AIMA Github](https://github.com/aimacode/aima-python) to solve the problem.
 
